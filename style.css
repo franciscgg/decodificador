@@ -49,6 +49,10 @@ body {
     gap: 1.25rem;
 }
 
+textarea:invalid {
+    outline: none;
+}
+
 .input_text textarea {
     background-color: var(--peppa-pig-background);
     border: none;

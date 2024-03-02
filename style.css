@@ -236,29 +236,27 @@ p {
     .body_padrao {
         flex-direction: column;
         align-items: center;
+        padding: 5% 2%;
     }
-    
-    .tamanho_logo {
-        width: 5rem;
-    }
-    
+
     .text_position {
-        gap: 0.75rem;
+        gap: 1rem;
     }
-    
+
     .mostrar_resposta {
-        width: 100%;
+        width: 90%;
+        max-width: 90%;
+        padding: 5%;
+    }
+
+    .tamanho_img {
         padding: 2%;
     }
-    
-    .tamanho_img {
-        padding: 0.75%;
-    }
-    
+
     .btn__padrao {
         width: 100%;
     }
-    
+
     .btn {
         width: 100%;
     }

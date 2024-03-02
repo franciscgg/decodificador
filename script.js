@@ -106,13 +106,13 @@ function exibirMensagemDeErro(mensagem) {
 
     titulo.textContent = "Pepinha não encontrou nenhuma mensagem";
     paragrafo.textContent = mensagem;
-    imagem.src = "/Images/pigpig.png"; 
+    imagem.src = "Images/pigpig.png"; 
 
     
     setTimeout(() => {
         titulo.textContent = "Pepinha não encontrou nenhuma mensagem";
         paragrafo.textContent = "Digite um texto que você deseja criptografar ou descriptografar.";
-        imagem.src = "/Images/pepinhalupa.png"; 
+        imagem.src = "Images/pepinhalupa.png"; 
     }, 4000); 
 }
 
@@ -124,12 +124,12 @@ function exibirMensagemDeErroDescriptografar(mensagem) {
 
     titulo.textContent = "Pepinha encontrou um erro";
     paragrafo.textContent = mensagem;
-    imagem.src = "/Images/pepinhalupabrava.png"; 
+    imagem.src = "Images/pepinhalupabrava.png"; 
 
     setTimeout(() => {
         titulo.textContent = "Pepinha não encontrou nenhuma mensagem";
         paragrafo.textContent = "Digite um texto que você deseja criptografar ou descriptografar.";
-        imagem.src = "/Images/pepinhalupa.png"; 
+        imagem.src = "Images/pepinhalupa.png"; 
     }, 4000); 
 }
 

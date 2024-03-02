@@ -12,6 +12,7 @@
 #mensagem__aviso{
     color: var(--peppa-pig-pink);
 }
+
 :root {
     --peppa-pig-pink: #FF5E5E; /* COR DO VESTIDO DA PEPPA */
     --peppa-pig-background: #FCCACD; /*COR FUNDO*/
@@ -47,10 +48,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 1.25rem;
-}
-
-textarea:invalid {
-    outline: none;
 }
 
 .input_text textarea {

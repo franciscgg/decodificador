@@ -42,12 +42,13 @@ function criptografar() {
     if (textoEntrada === '') { 
         exibirMensagemDeErro("Por favor, preencha o campo de texto.");
     } else if (/[A-Z]/.test(textoEntrada)) { 
-        exibirMensagemDeErro("Apenas letras minúsculas podem ser criptografadas.");
+        exibirMensagemDeErroLetraMaiuscula(); // Nova função de erro para letras maiúsculas
     } else {
         const resultado = criptografarTexto(textoEntrada);
         exibirMensagem(resultado);
     }
 }
+
 
 function descriptografar() {
     const textoCriptografado = document.getElementById('mensagem').value.trim();
@@ -124,6 +125,23 @@ function exibirMensagemDeErroDescriptografar(mensagem) {
 
     titulo.textContent = "Pepinha encontrou um erro";
     paragrafo.textContent = mensagem;
+    imagem.src = "Images/pepinhalupabrava.png"; 
+
+    setTimeout(() => {
+        titulo.textContent = "Pepinha não encontrou nenhuma mensagem";
+        paragrafo.textContent = "Digite um texto que você deseja criptografar ou descriptografar.";
+        imagem.src = "Images/pepinhalupa.png"; 
+    }, 4000); 
+}
+
+function exibirMensagemDeErroLetraMaiuscula() {
+    const secaoResposta = document.getElementById('mostrar_resposta');
+    const titulo = secaoResposta.querySelector('h2');
+    const paragrafo = secaoResposta.querySelector('p');
+    const imagem = secaoResposta.querySelector('img');
+
+    titulo.textContent = "Pepinha encontrou um erro";
+    paragrafo.textContent = "Por favor, digite um texto apenas com letras minúsculas.";
     imagem.src = "Images/pepinhalupabrava.png"; 
 
     setTimeout(() => {

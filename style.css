@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    text-wrap: inherit;
+}
+#mensagem__aviso{
+    color: var(--peppa-pig-pink);
+}
+:root {
+    --peppa-pig-pink: #FF5E5E; /* COR DO VESTIDO DA PEPPA */
+    --peppa-pig-background: #FCCACD; /*COR FUNDO*/
+    --peppa-pig-button: #FFA1AB; /*COR BOTÃO */
+    --color-white: #ffffff; /* COR BRANCO*/
+}
+
+body {
+    background-color: var(--peppa-pig-background);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.body_padrao {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 2% 2%;
+    gap: 20px;
+}
+
+.tamanho_logo {
+    width: 7.5rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.text_position {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.25rem;
+}
+
+.input_text textarea {
+    background-color: var(--peppa-pig-background);
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    text-size-adjust: auto;
+    color: var(--peppa-pig-pink);
+    padding: 5%;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.info_aviso {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+
+.info_importante {
+    color: #495057;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+
+.mostrar_resposta {
+    background-color: var(--color-white);
+    width: 25rem;
+    max-width: 25rem;
+    min-height: 37.5rem;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
+    box-shadow: 0 24px rgb(rgb(15, 15, 15), rgb(53, 53, 53), rgb(219, 219, 219));
+    padding: 3%;
+}
+
+.tamanho_img {
+    width: 100%;
+    height: auto;
+    padding: 1.5%;
+}
+
+.texto_resposta {
+    color: var(--peppa-pig-pink);
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+    padding: 1rem;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+h2 {
+    color: var(--Gray-gray-500, #343A40);
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+p {
+    color: #495057;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.button_padrao {
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn__padrao {
+    width: 20.5rem;
+    height: 4, 1875rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    border: 0.0625rem solid var(--peppa-pig-button);
+}
+
+.btn__pink__descript {
+    cursor: pointer;
+    background-color: var(--color-white);
+    color: var(--peppa-pig-button);
+}
+
+.btn__pink__descript:hover {
+    background-color: var(--peppa-pig-pink);
+    transition: .7s;
+}
+
+.btn__pink__cript {
+    cursor: pointer;
+    background-color: var(--peppa-pig-button);
+    color: var(--color-white);
+}
+
+.btn__pink__cript:hover {
+    background-color: var(--peppa-pig-pink);
+    transition: .6s;
+}
+
+.btn {
+    width: 12.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 0.0625rem solid var(--peppa-pig-button);
+    color: var(--peppa-pig-button);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: .7s;
+    box-shadow: 2px 2px 5px rgb(255, 87, 129);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 70%;
+    max-width: 700px;
+    background-color: var(--peppa-pig-button);
+}
+
+.msg_copy {
+    color: var(--color-white);
+}
+
+.x__fechar {
+    color: var(--peppa-pig-pink);
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.x__fechar:hover {
+    color: var(--color-white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mostrar_alert {
+    display: block;
+}
+
+.btn {
+    justify-content: space-around;
+    gap: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .body_padrao {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tamanho_logo {
+        width: 5rem;
+    }
+    
+    .text_position {
+        gap: 0.75rem;
+    }
+    
+    .mostrar_resposta {
+        width: 100%;
+        padding: 2%;
+    }
+    
+    .tamanho_img {
+        padding: 0.75%;
+    }
+    
+    .btn__padrao {
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}

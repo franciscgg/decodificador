@@ -231,39 +231,26 @@ p {
     cursor: pointer;
 }
 
-.rodape{
-    background-color: var(--peppa-pig-button);
-    padding: 16px;;
-}
-
-
-
-/* Responsividade */
 @media only screen and (max-width: 768px) {
     .body_padrao {
         flex-direction: column;
         align-items: center;
         padding: 5% 2%;
     }
-
     .text_position {
         gap: 1rem;
     }
-
     .mostrar_resposta {
         width: 90%;
         max-width: 90%;
         padding: 5%;
     }
-
     .tamanho_img {
         padding: 2%;
     }
-
     .btn__padrao {
         width: 100%;
     }
-
     .btn {
         width: 100%;
     }
